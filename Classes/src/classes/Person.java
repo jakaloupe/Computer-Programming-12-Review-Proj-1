@@ -12,9 +12,9 @@ package classes;
 public class Person {
     
     private String name;
-    private String age;
+    private int age;
     
-    public Person(String nameType, String ageType){
+    public Person(String nameType, int ageType){
         name = nameType;
         age = ageType;
     }

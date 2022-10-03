@@ -125,11 +125,24 @@ public class MainMenu {
                 
             case 6:
                 System.out.println("Problem 6: Arrays/Lists");
-                
-                
+
                 break;
                 
             case 7:
+                System.out.println("Problem 7: Classes/Objects");
+                
+                Scanner userInput7 = new Scanner(System.in);
+                System.out.println("Enter First Name and Last Name:");
+                String pName = userInput7.nextLine();
+        
+                System.out.println("Enter Age:");
+                int pAge = userInput7.nextInt();
+        
+                Person jacob = new Person(pName, pAge);
+        
+        System.out.println(jacob);
+                
+            case 8:
                 System.exit(0);
                 
                         

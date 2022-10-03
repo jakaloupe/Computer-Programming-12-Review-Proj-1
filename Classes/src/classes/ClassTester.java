@@ -18,7 +18,7 @@ public class ClassTester {
         String pName = userInput.nextLine();
         
         System.out.println("Enter Age:");
-        String pAge = userInput.nextLine();
+        int pAge = userInput.nextInt();
         
         Person jacob = new Person(pName, pAge);
         
