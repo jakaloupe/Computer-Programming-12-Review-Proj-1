@@ -24,7 +24,7 @@ public class OPERATORS {
         double amount = bank / cost;
         System.out.println("Price after tax: " + "$" + price);
         System.out.println("Amount of items you can purchase: " + (int)amount);
-        //project 1 an ything in
+        
     }
     
 }
