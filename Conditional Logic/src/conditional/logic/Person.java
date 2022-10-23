@@ -19,6 +19,7 @@ public class Person {
     
     
     public String getName() {
+        System.out.println(name);
         return name;
     }
     
@@ -29,6 +30,7 @@ public class Person {
     }
     
     public int getAge() {
+        System.out.println(age);
         return age;
     }
     
@@ -44,6 +46,7 @@ public class Person {
     }
     
     public String getQuote(){
+        System.out.println(quote);
         return quote;
     }
     

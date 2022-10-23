@@ -303,7 +303,7 @@ public class MainMenu {
             
             while (!nPerson){
                 
-                System.out.println("Would you like to change any features?, press 1 to change, or press 2 to stay");
+                System.out.println("Would you like to change any features?, press 1 to set something, press 2 to get something, or press 3 to stay");
                 int change = userInput.nextInt();
 
                 if(change == 1){
@@ -314,24 +314,18 @@ public class MainMenu {
                         case 1:
                             //method asks for new name
                             person.setName();
-                            //method assigns name to person
-                            person.getName();
                             //prints person with new name
                             person.printDetails();
                             break;
                         case 2:
                             //method asks for new age
-                            person.setAge();
-                            //method assigns age to person
-                            person.getAge();
+                            person.setAge();   
                             //prints person with new age
                             person.printDetails();
                             break;
                         case 3:
                             //method asks for new quote
                             person.setQuote();
-                            //method assigns quote to person
-                            person.getQuote();
                             //prints person with new quote
                             person.printDetails();
                             break;
@@ -340,8 +334,31 @@ public class MainMenu {
                             break;
                     }
                 }
+                
+                else if (change == 2){
+                    System.out.println("Press 1 to change Name, 2 to change Age or 3 to change Quote");
+                    int change2 = userInput.nextInt();
+                    
+                    switch(change2) {
+                        case 1:
+                            person.getName();
+                            break;
+                            
+                        case 2:
+                            person.getAge();
+                            break;
+                            
+                        case 3:
+                            person.getQuote();
+                            break;
+                        
+                        default:
+                            System.out.println("Invalid Input");
+                            break;
+                    }
+                }
                 // if user inputs "2" then keeps character as is/saves char
-                else if(change == 2) {
+                else if(change == 3) {
                 System.out.println("Your character is:");
                 nPerson = true;
                 person.printDetails();
